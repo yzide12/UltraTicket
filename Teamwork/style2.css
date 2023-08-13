@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #2977e6;
+  }
+
+  .login-link {
+    text-align: center;
+    margin-top: 10px;
+    color: #999;
+  }
+
+  .login-link a {
+    color: #3897f0;
+    text-decoration: none;
+  }
+
+  .covid-resources {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .covid-link {
+    display: block;
+    margin-top: 5px;
+    color: #3897f0;
+    text-decoration: none;
+  }
+
+  .covid-link:hover {
+    text-decoration: underline;
+  }
+
+  .terms {
+    font-size: 12px;
+    color: #999;
+  }
+
+  .privacy-cookies {
+    font-size: 11px;
+  }
