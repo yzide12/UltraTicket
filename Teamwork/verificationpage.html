@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vefify.css">
+    <title>User Form</title>
+</head>
+<body>
+    <form id="userForm" class="form-container">
+        <h1>User Form</h1>
+
+        <div class="form-group">
+            <label for="name">Name (First and Last):</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number (for SMS notifications):</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="userType">I am a:</label>
+            <select id="userType" name="userType" required>
+                <option value="" disabled selected>Select User Type</option>
+                <option value="Student">Student</option>
+                <option value="Parent">Parent</option>
+                <option value="Commuter">Commuter</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="affiliation">Which school or institution are you associated with?</label>
+            <input type="text" id="affiliation" name="affiliation">
+        </div>
+
+        <div class="form-group">
+            <label for="travelFrequency">Do you travel frequently on buses or trains?</label>
+            <input type="text" id="travelFrequency" name="travelFrequency">
+        </div>
+
+        <div class="form-group">
+            <label for="usageFrequency">How often do you plan to use Ultra Ticket for payments?</label>
+            <input type="text" id="usageFrequency" name="usageFrequency">
+        </div>
+
+        <div class="form-group">
+            <label for="paymentTypes">What types of payments will you make?</label>
+            <select id="paymentTypes" name="paymentTypes">
+                <option value="" disabled selected>Select Payment Type</option>
+                <option value="schoolFees">School Fees</option>
+                <option value="transportation">Transportation</option>
+                <option value="tuckshop">Tuckshop</option>
+                <option value="events">Events</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="fundManagement">Do you prefer auto-reload or manual fund management?</label>
+            <select id="fundManagement" name="fundManagement">
+                <option value="" disabled selected>Select Fund Management</option>
+                <option value="autoReload">Auto-Reload</option>
+                <option value="manual">Manual</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="useTuckshop">Would you like to use Ultra Ticket for Tuckshop purchases?</label>
+            <select id="useTuckshop" name="useTuckshop">
+                <option value="" disabled selected>Select Option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="schoolEvents">Do you intend to purchase event tickets or register for school events through the app?</label>
+            <select id="schoolEvents" name="schoolEvents">
+                <option value="" disabled selected>Select Option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="paymentPreferences">Will you make individual and group payments?</label>
+            <select id="paymentPreferences" name="paymentPreferences">
+                <option value="" disabled selected>Select Option</option>
+                <option value="individual">Individual</option>
+                <option value="group">Group</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="feedback">Share your thoughts on what features could enhance your experience with Ultra Ticket:</label>
+            <textarea id="feedback" name="feedback" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="improvements">Is there anything you'd like us to improve based on your payment habits?</label>
+            <textarea id="improvements" name="improvements" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="updates">How should we keep you updated?</label>
+            <input type="checkbox" id="emailUpdates" name="updates[]" value="email">
+            <label for="emailUpdates">Email</label>
+            <input type="checkbox" id="appUpdates" name="updates[]" value="app">
+            <label for="appUpdates">In-App Messages</label>
+        </div>
+
+        <div class="form-group">
+            <label for="offers">Are you interested in exclusive offers and discounts from our partners?</label>
+            <select id="offers" name="offers">
+                <option value="" disabled selected>Select Option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
